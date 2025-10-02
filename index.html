@@ -1,10 +1,110 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta http-equiv="refresh" content="0; url=https://mozilla.github.io/pdf.js/web/viewer.html?file=https://docs.google.com/document/d/1VBNoVhORPImZ7TBA0xF1M6UqtSLMzjg3u6POtmKZmsI/export?format=pdf">
-  <title>Redirecting...</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>REVIVAL HUB MINISTRY MIDNIGHT PRAYER</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #ffffff;
+      overflow: hidden;
+
+      /* Dark gradient background with animation */
+      background: linear-gradient(135deg, #000000, #0a0a0a, #1a1a1a, #000000);
+      background-size: 400% 400%;
+      animation: lightning 30s ease-in-out infinite;
+    }
+
+    @keyframes lightning {
+      0%, 90%, 100% { background-position: 0% 50%; filter: brightness(1); }
+      40% { background-position: 100% 50%; filter: brightness(1.2); }
+      50% { filter: brightness(2.2); } /* Flash effect */
+      60% { filter: brightness(1.2); }
+    }
+
+    .container {
+      text-align: center;
+      padding: 25px 30px;
+      border-radius: 12px;
+      background: rgba(0, 0, 0, 0.55);
+      box-shadow: 0 0 20px rgba(255, 204, 112, 0.2);
+      max-width: 320px;
+    }
+
+    h1 {
+      font-size: 1.6rem;
+      margin: 0 0 10px 0;
+      color: #ff4d4d;
+      text-transform: uppercase;
+      line-height: 1.4;
+      text-shadow: 0 0 10px rgba(255, 77, 77, 0.6);
+    }
+
+    p {
+      font-size: 1rem;
+      margin: 10px 0 15px 0;
+      color: #ff4d4d;
+      font-weight: bold;
+    }
+
+    .button-group {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px; /* Reduced gap for tighter arrangement */
+    }
+
+    a {
+      text-decoration: none;
+      width: 100%;
+    }
+
+    .btn {
+      width: 100%;
+      padding: 12px;
+      font-size: 1rem;
+      font-weight: bold;
+      border: none;
+      border-radius: 8px;
+      background: linear-gradient(45deg, #ff6a00, #ee0979);
+      color: #fff;
+      transition: all 0.3s ease;
+      cursor: pointer;
+      box-shadow: 0 3px 10px rgba(255, 100, 0, 0.4);
+      display: block;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px) scale(1.02);
+      box-shadow: 0 5px 15px rgba(255, 80, 50, 0.6);
+    }
+    
+    .emoji {
+      font-size: 22px;
+      margin-top: 12px;
+    }
+  </style>
 </head>
 <body>
-  <p>If you are not redirected, <a href="https://mozilla.github.io/pdf.js/web/viewer.html?file=https://docs.google.com/document/d/1VBNoVhORPImZ7TBA0xF1M6UqtSLMzjg3u6POtmKZmsI/export?format=pdf">click here</a>.</p>
+  <div class="container">
+    <h1>REVIVAL HUB MINISTRY<br>MIDNIGHT PRAYER</h1>
+    <p>Select Prayer Month</p>
+    <div class="button-group">
+      <a href="https://mozilla.github.io/pdf.js/web/viewer.html?file=https://docs.google.com/document/d/1VBNoVhORPImZ7TBA0xF1M6UqtSLMzjg3u6POtmKZmsI/export?format=pdf" target="_blank">
+        <button class="btn">1. SEPTEMBER</button>
+      </a>
+      <a href="https://mozilla.github.io/pdf.js/web/viewer.html?file=https://docs.google.com/document/d/1rW27zvmmx5YM1PU7ck5CBAvrkulQJnncvQoVvTP7-xg/export?format=pdf" target="_blank">
+        <button class="btn">2. OCTOBER</button>
+      </a>
+      <p class="emoji">🔥💒</p>
+    </div>
+  </div>
 </body>
 </html>
