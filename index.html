@@ -24,18 +24,24 @@
 
     @keyframes lightning {
       0%, 90%, 100% { background-position: 0% 50%; filter: brightness(1); }
-      40% { background-position: 100% 50%; filter: brightness(1.2); }
-      50% { filter: brightness(2.2); } /* Flash effect */
-      60% { filter: brightness(1.2); }
+      40% { background-position: 100% 50%; filter: brightness(1); }
+      50% { filter: brightness(1); } /* Flash effect */
+      60% { filter: brightness(1); }
     }
 
     .container {
       text-align: center;
-      padding: 25px 30px;
+      padding: 25px 30px 0;
       border-radius: 12px;
       background: rgba(0, 0, 0, 0.55);
-      box-shadow: 0 0 20px rgba(255, 204, 112, 0.2);
+      /* box-shadow: 0 0 20px #340417; */
       max-width: 320px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      overflow: hidden;
+      border: solid;
+      border-color: #2c060c5e;
     }
 
     h1 {
@@ -58,7 +64,8 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      gap: 12px; /* Reduced gap for tighter arrangement */
+      gap: 12px;
+      margin-bottom: 15px;
     }
 
     a {
@@ -66,45 +73,87 @@
       width: 100%;
     }
 
+    a:hover {
+      text-decoration: none;
+    }
+    
     .btn {
       width: 100%;
       padding: 12px;
       font-size: 1rem;
-      font-weight: bold;
-      border: none;
+      font-weight: bolder;
       border-radius: 8px;
-      background: linear-gradient(45deg, #ff6a00, #ee0979);
-      color: #fff;
+      border-width: 0px;
+      background: linear-gradient(180deg, #ff6a00, #ee0979);
+      color: white;
       transition: all 0.3s ease;
       cursor: pointer;
-      box-shadow: 0 3px 10px rgba(255, 100, 0, 0.4);
+      /* box-shadow: 0 3px 10px rgba(255, 100, 0, 0.4); */
       display: block;
+      text-decoration: none;
     }
 
     .btn:hover {
-      transform: translateY(-2px) scale(1.02);
-      box-shadow: 0 5px 15px rgba(255, 80, 50, 0.6);
+      transform: translateY(-5px) /*scale(1.02) */;
+      /* box-shadow: 0 5px 15px rgba(255, 80, 50, 0.6); */
+      text-decoration: none;
     }
     
+     .whatsapp-btn:hover {
+      	transform: translateY(-5px);
+      	/* box-shadow: 0 5px 15px rgba(255, 80, 50, 0.6); */
+    }
+
     .emoji {
       font-size: 22px;
-      margin-top: 12px;
+      margin-top: 5px;
+      margin-bottom: 5px;
     }
+
+    /* WhatsApp Button - bottom appendage inside the container */
+    .whatsapp-btn {
+      width: 100%;
+      padding: 14px;
+	  margin-bottom: 30px;
+      border: none;
+      background: linear-gradient(180deg, #ee0979, #ff6a00);
+      color: white;
+      font-size: 1rem;
+      font-weight: bold;
+      border-radius: 12px 12px 12px 12px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      /* box-shadow: 0 -3px 10px rgba(255, 100, 0, 0.3); */
+    }
+
+    .titleheading {
+    font-weight: bold;
+    }
+    
+    .normaltext{
+    color: #a64141;
+    }
+
   </style>
 </head>
 <body>
   <div class="container">
-    <h1>REVIVAL HUB MINISTRY<br>MIDNIGHT PRAYER</h1>
-    <p>Select Prayer Month</p>
-    <div class="button-group">
-      <a href="https://mozilla.github.io/pdf.js/web/viewer.html?file=https://docs.google.com/document/d/1VBNoVhORPImZ7TBA0xF1M6UqtSLMzjg3u6POtmKZmsI/export?format=pdf" target="_blank">
-        <button class="btn">1. SEPTEMBER</button>
-      </a>
-      <a href="https://mozilla.github.io/pdf.js/web/viewer.html?file=https://docs.google.com/document/d/1rW27zvmmx5YM1PU7ck5CBAvrkulQJnncvQoVvTP7-xg/export?format=pdf" target="_blank">
-        <button class="btn">2. OCTOBER</button>
-      </a>
-      <p class="emoji">🔥💒</p>
+    <div>
+      <h1 class="titleheading">REVIVAL HUB MINISTRY<br>MIDNIGHT PRAYER</h1>
+      <p class="normaltext">Select Prayer Month</p>
+      <div class="button-group">
+        <a href="https://mozilla.github.io/pdf.js/web/viewer.html?file=https://docs.google.com/document/d/1VBNoVhORPImZ7TBA0xF1M6UqtSLMzjg3u6POtmKZmsI/export?format=pdf" target="_blank">
+          <button class="btn">1. SEPTEMBER</button>
+        </a>
+        <a href="https://mozilla.github.io/pdf.js/web/viewer.html?file=https://docs.google.com/document/d/1rW27zvmmx5YM1PU7ck5CBAvrkulQJnncvQoVvTP7-xg/export?format=pdf" target="_blank">
+          <button class="btn">2. OCTOBER</button>
+        </a>
+        <p class="emoji">🔥</p>
+      </div>
     </div>
+    <a href="https://chat.whatsapp.com/yourgroupinvite" target="_blank">
+    </a>
+<button class="whatsapp-btn">💬 Join our WhatsApp Group</button>
   </div>
 </body>
 </html>
